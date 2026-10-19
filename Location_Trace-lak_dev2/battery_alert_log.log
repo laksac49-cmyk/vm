@@ -1,0 +1,787 @@
+Log file created at 2025-06-20 21:00:11.996751
+2025-06-20 21:00:11,999 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:00:11.999658
+2025-06-20 21:00:12,001 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:00:12,063 - ERROR - Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-06-20 21:00:12,063 - ERROR - Error checking battery alert: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+ at 2025-06-20 21:00:12.063670
+2025-06-20 21:00:47,063 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:00:47.063927
+2025-06-20 21:00:47,064 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:00:47,121 - INFO - Database connection established.
+2025-06-20 21:00:47,124 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 15.5, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': None, 'users': 'Thilak Fernando'})]
+2025-06-20 21:00:47,124 - INFO - Evaluating battery: 15.5%
+2025-06-20 21:00:47,124 - INFO - No battery alert at 2025-06-20 21:00:47.124919 - battery=15.5%, time_check=True
+2025-06-20 21:00:47,125 - INFO - Database connection closed at 2025-06-20 21:00:47.125172
+2025-06-20 21:01:41,350 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:01:41.350413
+2025-06-20 21:01:41,351 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:01:41,510 - INFO - Database connection established.
+2025-06-20 21:01:41,513 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': None, 'users': 'Thilak Fernando'})]
+2025-06-20 21:01:41,513 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:01:41,513 - INFO - Battery alert triggered at 2025-06-20 21:01:41.513818 for 5.0%
+2025-06-20 21:01:41,514 - INFO - Triggering email to: g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com with user Thilak Fernando at 2025-06-20 21:01:41.514022
+2025-06-20 21:01:41,514 - INFO - Attempting to send email from g20016.lakmal@gmail.com to g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-20 21:01:41.514184
+2025-06-20 21:01:44,784 - INFO - Email sent from g20016.lakmal@gmail.com to g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-20 21:01:44.784100
+2025-06-20 21:01:44,787 - INFO - Updated last_alert to 2025-06-20 21:01:44.787932
+2025-06-20 21:01:44,788 - INFO - Database connection closed at 2025-06-20 21:01:44.788388
+2025-06-20 21:22:46,134 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:22:46.134656
+2025-06-20 21:22:46,135 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:22:46,193 - INFO - Database connection established.
+2025-06-20 21:22:46,196 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:22:46,197 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:22:46,197 - INFO - No battery alert at 2025-06-20 21:22:46.197446 - battery=5.0%, time_check=False
+2025-06-20 21:22:46,197 - INFO - Database connection closed at 2025-06-20 21:22:46.197727
+2025-06-20 21:28:26,682 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:28:26.682967
+2025-06-20 21:28:26,683 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:28:26,844 - INFO - Database connection established.
+2025-06-20 21:28:26,846 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:28:26,846 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:28:26,846 - INFO - No battery alert at 2025-06-20 21:28:26.846745 - battery=5.0%, time_check=False
+2025-06-20 21:28:26,846 - INFO - Database connection closed at 2025-06-20 21:28:26.846971
+2025-06-20 21:28:57,391 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:28:57.391683
+2025-06-20 21:28:57,392 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:28:57,442 - INFO - Database connection established.
+2025-06-20 21:28:57,445 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:28:57,445 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:28:57,445 - INFO - No battery alert at 2025-06-20 21:28:57.445715 - battery=5.0%, time_check=False
+2025-06-20 21:28:57,445 - INFO - Database connection closed at 2025-06-20 21:28:57.445915
+2025-06-20 21:29:19,159 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:29:19.159665
+2025-06-20 21:29:19,160 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:29:19,213 - INFO - Database connection established.
+2025-06-20 21:29:19,216 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:29:19,216 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:29:19,216 - INFO - No battery alert at 2025-06-20 21:29:19.216820 - battery=5.0%, time_check=False
+2025-06-20 21:29:19,217 - INFO - Database connection closed at 2025-06-20 21:29:19.217087
+2025-06-20 21:34:19,468 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:34:19.469319
+2025-06-20 21:34:19,470 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:34:19,519 - INFO - Database connection established.
+2025-06-20 21:34:19,521 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:34:19,521 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:34:19,521 - INFO - No battery alert at 2025-06-20 21:34:19.521881 - battery=5.0%, time_check=False
+2025-06-20 21:34:19,522 - INFO - Database connection closed at 2025-06-20 21:34:19.522079
+2025-06-20 21:39:19,763 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:39:19.763965
+2025-06-20 21:39:19,764 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:39:19,822 - INFO - Database connection established.
+2025-06-20 21:39:19,825 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:39:19,825 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:39:19,826 - INFO - No battery alert at 2025-06-20 21:39:19.826027 - battery=5.0%, time_check=False
+2025-06-20 21:39:19,826 - INFO - Database connection closed at 2025-06-20 21:39:19.826242
+2025-06-20 21:44:20,319 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:44:20.320096
+2025-06-20 21:44:20,321 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:44:20,406 - INFO - Database connection established.
+2025-06-20 21:44:20,412 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:44:20,412 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:44:20,412 - INFO - No battery alert at 2025-06-20 21:44:20.412674 - battery=5.0%, time_check=False
+2025-06-20 21:44:20,413 - INFO - Database connection closed at 2025-06-20 21:44:20.413044
+2025-06-20 21:49:19,798 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:49:19.798924
+2025-06-20 21:49:19,800 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:49:19,902 - INFO - Database connection established.
+2025-06-20 21:49:19,908 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:49:19,908 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:49:19,908 - INFO - No battery alert at 2025-06-20 21:49:19.908880 - battery=5.0%, time_check=False
+2025-06-20 21:49:19,909 - INFO - Database connection closed at 2025-06-20 21:49:19.909164
+2025-06-20 21:54:19,781 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:54:19.781527
+2025-06-20 21:54:19,782 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:54:19,832 - INFO - Database connection established.
+2025-06-20 21:54:19,834 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:54:19,835 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:54:19,835 - INFO - No battery alert at 2025-06-20 21:54:19.835187 - battery=5.0%, time_check=False
+2025-06-20 21:54:19,835 - INFO - Database connection closed at 2025-06-20 21:54:19.835382
+2025-06-20 21:59:19,523 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 21:59:19.523950
+2025-06-20 21:59:19,525 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 21:59:19,575 - INFO - Database connection established.
+2025-06-20 21:59:19,577 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 21:59:19,577 - INFO - Evaluating battery: 5.0%
+2025-06-20 21:59:19,577 - INFO - No battery alert at 2025-06-20 21:59:19.577720 - battery=5.0%, time_check=False
+2025-06-20 21:59:19,577 - INFO - Database connection closed at 2025-06-20 21:59:19.577910
+2025-06-20 22:04:19,412 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:04:19.412910
+2025-06-20 22:04:19,413 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:04:19,469 - INFO - Database connection established.
+2025-06-20 22:04:19,471 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 21, 1, 41, 510962), 'users': 'Thilak Fernando'})]
+2025-06-20 22:04:19,471 - INFO - Evaluating battery: 5.0%
+2025-06-20 22:04:19,471 - INFO - Battery alert triggered at 2025-06-20 22:04:19.471472 for 5.0%
+2025-06-20 22:04:19,471 - INFO - Triggering email to: g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com with user Thilak Fernando at 2025-06-20 22:04:19.471589
+2025-06-20 22:04:19,471 - INFO - Attempting to send email from g20016.lakmal@gmail.com to g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-20 22:04:19.471693
+2025-06-20 22:04:23,058 - INFO - Email sent from g20016.lakmal@gmail.com to g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-20 22:04:23.058817
+2025-06-20 22:04:23,067 - INFO - Updated last_alert to 2025-06-20 22:04:23.067381
+2025-06-20 22:04:23,068 - INFO - Database connection closed at 2025-06-20 22:04:23.068359
+2025-06-20 22:09:19,602 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:09:19.602716
+2025-06-20 22:09:19,603 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:09:19,653 - INFO - Database connection established.
+2025-06-20 22:09:19,655 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 4, 19, 469340), 'users': 'Thilak Fernando'})]
+2025-06-20 22:09:19,655 - INFO - Evaluating battery: 5.0%
+2025-06-20 22:09:19,656 - INFO - No battery alert at 2025-06-20 22:09:19.656060 - battery=5.0%, time_check=False
+2025-06-20 22:09:19,656 - INFO - Database connection closed at 2025-06-20 22:09:19.656256
+2025-06-20 22:14:49,451 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:14:49.452070
+2025-06-20 22:14:49,453 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:14:49,525 - INFO - Database connection established.
+2025-06-20 22:14:49,528 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 4, 19, 469340), 'users': 'Thilak Fernando'})]
+2025-06-20 22:14:49,528 - INFO - Evaluating battery: 5.0%
+2025-06-20 22:14:49,528 - INFO - No battery alert at 2025-06-20 22:14:49.528780 - battery=5.0%, time_check=False
+2025-06-20 22:14:49,528 - INFO - Database connection closed at 2025-06-20 22:14:49.528981
+2025-06-20 22:19:19,399 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:19:19.400512
+2025-06-20 22:19:19,401 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:19:19,475 - INFO - Database connection established.
+2025-06-20 22:19:19,477 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 4, 19, 469340), 'users': 'Thilak Fernando'})]
+2025-06-20 22:19:19,478 - INFO - Evaluating battery: 5.0%
+2025-06-20 22:19:19,478 - INFO - No battery alert at 2025-06-20 22:19:19.478259 - battery=5.0%, time_check=False
+2025-06-20 22:19:19,478 - INFO - Database connection closed at 2025-06-20 22:19:19.478492
+2025-06-20 22:24:20,001 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:24:20.002389
+2025-06-20 22:24:20,003 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:24:20,073 - INFO - Database connection established.
+2025-06-20 22:24:20,075 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 4, 19, 469340), 'users': 'Thilak Fernando'})]
+2025-06-20 22:24:20,075 - INFO - Evaluating battery: 5.0%
+2025-06-20 22:24:20,076 - INFO - No battery alert at 2025-06-20 22:24:20.076013 - battery=5.0%, time_check=False
+2025-06-20 22:24:20,076 - INFO - Database connection closed at 2025-06-20 22:24:20.076257
+2025-06-20 22:29:26,827 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:29:26.828137
+2025-06-20 22:29:26,829 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:29:27,009 - INFO - Database connection established.
+2025-06-20 22:29:27,012 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'battery_percentage': 5.0, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 4, 19, 469340), 'users': 'Thilak Fernando'})]
+2025-06-20 22:29:27,012 - INFO - Evaluating battery: 5.0%
+2025-06-20 22:29:27,012 - INFO - No battery alert at 2025-06-20 22:29:27.012508 - battery=5.0%, time_check=False
+2025-06-20 22:29:27,012 - INFO - Database connection closed at 2025-06-20 22:29:27.012725
+2025-06-20 22:34:19,599 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:34:19.600418
+2025-06-20 22:34:19,602 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:34:19,677 - ERROR - Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-06-20 22:34:19,678 - ERROR - Error checking battery alert: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+ at 2025-06-20 22:34:19.678573
+2025-06-20 22:35:57,654 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:35:57.654865
+2025-06-20 22:35:57,666 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:35:57,724 - INFO - Database connection established.
+2025-06-20 22:35:57,729 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 4, 19, 469340), 'users': 'Thilak Fernando'})]
+2025-06-20 22:35:57,730 - INFO - Evaluating battery: 15.5%
+2025-06-20 22:35:57,730 - INFO - No battery alert at 2025-06-20 22:35:57.730822 - battery=15.5%, time_check=False
+2025-06-20 22:35:57,731 - INFO - Database connection closed at 2025-06-20 22:35:57.731108
+2025-06-20 22:39:19,886 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:39:19.886549
+2025-06-20 22:39:19,888 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:39:19,979 - INFO - Database connection established.
+2025-06-20 22:39:19,984 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 22:39:19.984397
+2025-06-20 22:39:19,984 - INFO - Database connection closed at 2025-06-20 22:39:19.984675
+2025-06-20 22:39:54,304 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:39:54.305114
+2025-06-20 22:39:54,306 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:39:54,360 - INFO - Database connection established.
+2025-06-20 22:39:54,362 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 22:39:54.362913
+2025-06-20 22:39:54,363 - INFO - Database connection closed at 2025-06-20 22:39:54.363212
+2025-06-20 22:44:19,793 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:44:19.793687
+2025-06-20 22:44:19,796 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:44:19,872 - INFO - Database connection established.
+2025-06-20 22:44:19,876 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 22:44:19.875951
+2025-06-20 22:44:19,877 - INFO - Database connection closed at 2025-06-20 22:44:19.877126
+2025-06-20 22:45:07,176 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:45:07.176811
+2025-06-20 22:45:07,178 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:45:07,266 - INFO - Database connection established.
+2025-06-20 22:45:07,277 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 4, 19, 469340), 'users': 'Thilak Fernando'})]
+2025-06-20 22:45:07,277 - INFO - Evaluating battery: 80.0%
+2025-06-20 22:45:07,278 - INFO - No battery alert at 2025-06-20 22:45:07.278140 - battery=80.0%, time_check=False
+2025-06-20 22:45:07,278 - INFO - Database connection closed at 2025-06-20 22:45:07.278550
+2025-06-20 22:47:54,684 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:47:54.685014
+2025-06-20 22:47:54,686 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:47:54,763 - INFO - Database connection established.
+2025-06-20 22:47:54,767 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 22:47:54.767435
+2025-06-20 22:47:54,768 - INFO - Database connection closed at 2025-06-20 22:47:54.767982
+2025-06-20 22:49:19,674 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:49:19.674827
+2025-06-20 22:49:19,675 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:49:19,730 - INFO - Database connection established.
+2025-06-20 22:49:19,733 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 22:49:19.732954
+2025-06-20 22:49:19,733 - INFO - Database connection closed at 2025-06-20 22:49:19.733254
+2025-06-20 22:49:41,399 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:49:41.399303
+2025-06-20 22:49:41,407 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:49:41,531 - INFO - Database connection established.
+2025-06-20 22:49:41,548 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'emails': 'g20016.lakmal@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': None, 'users': 'Thilak Fernando'})]
+2025-06-20 22:49:41,552 - INFO - Evaluating battery: 80.0%
+2025-06-20 22:49:41,553 - INFO - Battery alert triggered at 2025-06-20 22:49:41.553259 for 80.0%
+2025-06-20 22:49:41,571 - INFO - Triggering email to: g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com with user Thilak Fernando at 2025-06-20 22:49:41.571289
+2025-06-20 22:49:41,574 - INFO - Attempting to send email from g20016.lakmal@gmail.com to g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-20 22:49:41.574410
+2025-06-20 22:49:44,752 - INFO - Email sent from g20016.lakmal@gmail.com to g20016.lakmal@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-20 22:49:44.752619
+2025-06-20 22:49:44,755 - INFO - Updated last_alert to 2025-06-20 22:49:44.755615
+2025-06-20 22:49:44,756 - INFO - Database connection closed at 2025-06-20 22:49:44.756134
+2025-06-20 22:54:19,977 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:54:19.977731
+2025-06-20 22:54:19,983 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:54:20,136 - INFO - Database connection established.
+2025-06-20 22:54:20,139 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 22:54:20.139329
+2025-06-20 22:54:20,139 - INFO - Database connection closed at 2025-06-20 22:54:20.139573
+2025-06-20 22:59:19,952 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 22:59:19.952634
+2025-06-20 22:59:19,953 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 22:59:20,132 - INFO - Database connection established.
+2025-06-20 22:59:20,135 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 22:59:20.135031
+2025-06-20 22:59:20,135 - INFO - Database connection closed at 2025-06-20 22:59:20.135350
+2025-06-20 23:04:21,268 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:04:21.269085
+2025-06-20 23:04:21,271 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:04:21,464 - INFO - Database connection established.
+2025-06-20 23:04:21,467 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:04:21.466991
+2025-06-20 23:04:21,467 - INFO - Database connection closed at 2025-06-20 23:04:21.467269
+2025-06-20 23:09:19,319 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:09:19.319788
+2025-06-20 23:09:19,320 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:09:19,531 - INFO - Database connection established.
+2025-06-20 23:09:19,536 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:09:19.536778
+2025-06-20 23:09:19,537 - INFO - Database connection closed at 2025-06-20 23:09:19.537277
+2025-06-20 23:14:19,442 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:14:19.443210
+2025-06-20 23:14:19,443 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:14:19,609 - INFO - Database connection established.
+2025-06-20 23:14:19,611 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:14:19.611403
+2025-06-20 23:14:19,611 - INFO - Database connection closed at 2025-06-20 23:14:19.611637
+2025-06-20 23:19:19,832 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:19:19.832660
+2025-06-20 23:19:19,834 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:19:19,907 - INFO - Database connection established.
+2025-06-20 23:19:19,911 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:19:19.911412
+2025-06-20 23:19:19,911 - INFO - Database connection closed at 2025-06-20 23:19:19.911717
+2025-06-20 23:24:19,348 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:24:19.349497
+2025-06-20 23:24:19,350 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:24:19,501 - INFO - Database connection established.
+2025-06-20 23:24:19,504 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:24:19.504386
+2025-06-20 23:24:19,506 - INFO - Database connection closed at 2025-06-20 23:24:19.506093
+2025-06-20 23:29:19,543 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:29:19.544212
+2025-06-20 23:29:19,545 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:29:19,714 - INFO - Database connection established.
+2025-06-20 23:29:19,716 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:29:19.716848
+2025-06-20 23:29:19,717 - INFO - Database connection closed at 2025-06-20 23:29:19.717081
+2025-06-20 23:34:19,212 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:34:19.212857
+2025-06-20 23:34:19,213 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:34:19,389 - INFO - Database connection established.
+2025-06-20 23:34:19,392 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:34:19.392309
+2025-06-20 23:34:19,392 - INFO - Database connection closed at 2025-06-20 23:34:19.392652
+2025-06-20 23:39:19,515 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:39:19.515225
+2025-06-20 23:39:19,516 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:39:19,565 - INFO - Database connection established.
+2025-06-20 23:39:19,568 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:39:19.567971
+2025-06-20 23:39:19,568 - INFO - Database connection closed at 2025-06-20 23:39:19.568226
+2025-06-20 23:44:19,024 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:44:19.024291
+2025-06-20 23:44:19,025 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:44:19,075 - INFO - Database connection established.
+2025-06-20 23:44:19,078 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:44:19.078350
+2025-06-20 23:44:19,078 - INFO - Database connection closed at 2025-06-20 23:44:19.078597
+2025-06-20 23:49:19,833 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:49:19.833855
+2025-06-20 23:49:19,834 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:49:19,884 - INFO - Database connection established.
+2025-06-20 23:49:19,886 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:49:19.886844
+2025-06-20 23:49:19,887 - INFO - Database connection closed at 2025-06-20 23:49:19.887110
+2025-06-20 23:54:19,235 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:54:19.235869
+2025-06-20 23:54:19,236 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:54:19,286 - INFO - Database connection established.
+2025-06-20 23:54:19,288 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:54:19.288949
+2025-06-20 23:54:19,289 - INFO - Database connection closed at 2025-06-20 23:54:19.289188
+2025-06-20 23:59:19,453 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-20 23:59:19.454060
+2025-06-20 23:59:19,454 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-20 23:59:19,504 - INFO - Database connection established.
+2025-06-20 23:59:19,506 - ERROR - Invalid battery level format: Battery info not available at 2025-06-20 23:59:19.506640
+2025-06-20 23:59:19,506 - INFO - Database connection closed at 2025-06-20 23:59:19.506895
+2025-06-21 00:04:19,842 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:04:19.842805
+2025-06-21 00:04:19,844 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:04:19,917 - INFO - Database connection established.
+2025-06-21 00:04:19,921 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:04:19.921589
+2025-06-21 00:04:19,922 - INFO - Database connection closed at 2025-06-21 00:04:19.922046
+2025-06-21 00:09:19,547 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:09:19.547859
+2025-06-21 00:09:19,548 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:09:19,597 - INFO - Database connection established.
+2025-06-21 00:09:19,600 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:09:19.600504
+2025-06-21 00:09:19,600 - INFO - Database connection closed at 2025-06-21 00:09:19.600754
+2025-06-21 00:14:19,498 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:14:19.499405
+2025-06-21 00:14:19,500 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:14:19,682 - INFO - Database connection established.
+2025-06-21 00:14:19,685 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:14:19.685326
+2025-06-21 00:14:19,685 - INFO - Database connection closed at 2025-06-21 00:14:19.685588
+2025-06-21 00:19:19,347 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:19:19.347912
+2025-06-21 00:19:19,348 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:19:19,523 - INFO - Database connection established.
+2025-06-21 00:19:19,526 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:19:19.526035
+2025-06-21 00:19:19,526 - INFO - Database connection closed at 2025-06-21 00:19:19.526303
+2025-06-21 00:24:19,367 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:24:19.368068
+2025-06-21 00:24:19,369 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:24:19,419 - INFO - Database connection established.
+2025-06-21 00:24:19,421 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:24:19.421666
+2025-06-21 00:24:19,421 - INFO - Database connection closed at 2025-06-21 00:24:19.421931
+2025-06-21 00:29:19,520 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:29:19.520896
+2025-06-21 00:29:19,521 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:29:19,571 - INFO - Database connection established.
+2025-06-21 00:29:19,574 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:29:19.574051
+2025-06-21 00:29:19,574 - INFO - Database connection closed at 2025-06-21 00:29:19.574311
+2025-06-21 00:34:19,769 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:34:19.770093
+2025-06-21 00:34:19,771 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:34:19,819 - INFO - Database connection established.
+2025-06-21 00:34:19,822 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:34:19.822268
+2025-06-21 00:34:19,822 - INFO - Database connection closed at 2025-06-21 00:34:19.822514
+2025-06-21 00:39:19,809 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:39:19.809634
+2025-06-21 00:39:19,810 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:39:19,966 - INFO - Database connection established.
+2025-06-21 00:39:19,968 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:39:19.968878
+2025-06-21 00:39:19,969 - INFO - Database connection closed at 2025-06-21 00:39:19.969136
+2025-06-21 00:44:19,916 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:44:19.916994
+2025-06-21 00:44:19,918 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:44:19,991 - INFO - Database connection established.
+2025-06-21 00:44:19,993 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:44:19.993930
+2025-06-21 00:44:19,994 - INFO - Database connection closed at 2025-06-21 00:44:19.994200
+2025-06-21 00:49:20,164 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:49:20.164511
+2025-06-21 00:49:20,165 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:49:20,235 - INFO - Database connection established.
+2025-06-21 00:49:20,237 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:49:20.237726
+2025-06-21 00:49:20,238 - INFO - Database connection closed at 2025-06-21 00:49:20.238046
+2025-06-21 00:54:19,359 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:54:19.360350
+2025-06-21 00:54:19,361 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:54:19,433 - INFO - Database connection established.
+2025-06-21 00:54:19,436 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:54:19.436474
+2025-06-21 00:54:19,436 - INFO - Database connection closed at 2025-06-21 00:54:19.436717
+2025-06-21 00:59:19,276 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 00:59:19.276506
+2025-06-21 00:59:19,277 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 00:59:19,366 - INFO - Database connection established.
+2025-06-21 00:59:19,369 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 00:59:19.369158
+2025-06-21 00:59:19,369 - INFO - Database connection closed at 2025-06-21 00:59:19.369477
+2025-06-21 01:04:19,248 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:04:19.249340
+2025-06-21 01:04:19,250 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:04:19,324 - INFO - Database connection established.
+2025-06-21 01:04:19,327 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:04:19.327269
+2025-06-21 01:04:19,327 - INFO - Database connection closed at 2025-06-21 01:04:19.327552
+2025-06-21 01:09:19,692 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:09:19.693053
+2025-06-21 01:09:19,694 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:09:19,902 - INFO - Database connection established.
+2025-06-21 01:09:19,905 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:09:19.905088
+2025-06-21 01:09:19,905 - INFO - Database connection closed at 2025-06-21 01:09:19.905340
+2025-06-21 01:14:19,664 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:14:19.665302
+2025-06-21 01:14:19,666 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:14:19,735 - INFO - Database connection established.
+2025-06-21 01:14:19,738 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:14:19.738346
+2025-06-21 01:14:19,738 - INFO - Database connection closed at 2025-06-21 01:14:19.738609
+2025-06-21 01:19:19,700 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:19:19.701392
+2025-06-21 01:19:19,702 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:19:19,751 - INFO - Database connection established.
+2025-06-21 01:19:19,754 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:19:19.754474
+2025-06-21 01:19:19,754 - INFO - Database connection closed at 2025-06-21 01:19:19.754741
+2025-06-21 01:24:19,713 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:24:19.713683
+2025-06-21 01:24:19,714 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:24:19,765 - INFO - Database connection established.
+2025-06-21 01:24:19,768 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:24:19.768002
+2025-06-21 01:24:19,768 - INFO - Database connection closed at 2025-06-21 01:24:19.768249
+2025-06-21 01:29:19,534 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:29:19.534759
+2025-06-21 01:29:19,535 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:29:19,585 - INFO - Database connection established.
+2025-06-21 01:29:19,588 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:29:19.588283
+2025-06-21 01:29:19,588 - INFO - Database connection closed at 2025-06-21 01:29:19.588537
+2025-06-21 01:34:19,441 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:34:19.441698
+2025-06-21 01:34:19,442 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:34:19,492 - INFO - Database connection established.
+2025-06-21 01:34:19,495 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:34:19.495638
+2025-06-21 01:34:19,495 - INFO - Database connection closed at 2025-06-21 01:34:19.495895
+2025-06-21 01:39:19,331 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:39:19.332683
+2025-06-21 01:39:19,333 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:39:19,382 - INFO - Database connection established.
+2025-06-21 01:39:19,385 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:39:19.385120
+2025-06-21 01:39:19,385 - INFO - Database connection closed at 2025-06-21 01:39:19.385391
+2025-06-21 01:44:27,476 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:44:27.477240
+2025-06-21 01:44:27,479 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:44:27,549 - INFO - Database connection established.
+2025-06-21 01:44:27,552 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:44:27.552149
+2025-06-21 01:44:27,552 - INFO - Database connection closed at 2025-06-21 01:44:27.552399
+2025-06-21 01:49:20,600 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:49:20.601152
+2025-06-21 01:49:20,602 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:49:20,652 - INFO - Database connection established.
+2025-06-21 01:49:20,655 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:49:20.655537
+2025-06-21 01:49:20,655 - INFO - Database connection closed at 2025-06-21 01:49:20.655830
+2025-06-21 01:54:19,912 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:54:19.912721
+2025-06-21 01:54:19,913 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:54:20,106 - INFO - Database connection established.
+2025-06-21 01:54:20,109 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:54:20.109444
+2025-06-21 01:54:20,109 - INFO - Database connection closed at 2025-06-21 01:54:20.109689
+2025-06-21 01:59:19,686 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 01:59:19.686866
+2025-06-21 01:59:19,688 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 01:59:19,737 - INFO - Database connection established.
+2025-06-21 01:59:19,740 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 01:59:19.740211
+2025-06-21 01:59:19,740 - INFO - Database connection closed at 2025-06-21 01:59:19.740470
+2025-06-21 02:04:19,656 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:04:19.657294
+2025-06-21 02:04:19,658 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:04:19,734 - INFO - Database connection established.
+2025-06-21 02:04:19,737 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:04:19.737621
+2025-06-21 02:04:19,737 - INFO - Database connection closed at 2025-06-21 02:04:19.737923
+2025-06-21 02:09:20,353 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:09:20.353371
+2025-06-21 02:09:20,354 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:09:20,596 - INFO - Database connection established.
+2025-06-21 02:09:20,599 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:09:20.599081
+2025-06-21 02:09:20,599 - INFO - Database connection closed at 2025-06-21 02:09:20.599360
+2025-06-21 02:14:22,606 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:14:22.607033
+2025-06-21 02:14:22,608 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:14:22,687 - INFO - Database connection established.
+2025-06-21 02:14:22,690 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:14:22.690394
+2025-06-21 02:14:22,690 - INFO - Database connection closed at 2025-06-21 02:14:22.690676
+2025-06-21 02:19:19,444 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:19:19.444926
+2025-06-21 02:19:19,445 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:19:19,494 - INFO - Database connection established.
+2025-06-21 02:19:19,496 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:19:19.496920
+2025-06-21 02:19:19,497 - INFO - Database connection closed at 2025-06-21 02:19:19.497211
+2025-06-21 02:24:19,699 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:24:19.699818
+2025-06-21 02:24:19,701 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:24:19,752 - INFO - Database connection established.
+2025-06-21 02:24:19,755 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:24:19.755019
+2025-06-21 02:24:19,755 - INFO - Database connection closed at 2025-06-21 02:24:19.755301
+2025-06-21 02:29:19,314 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:29:19.314595
+2025-06-21 02:29:19,316 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:29:19,366 - INFO - Database connection established.
+2025-06-21 02:29:19,368 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:29:19.368845
+2025-06-21 02:29:19,369 - INFO - Database connection closed at 2025-06-21 02:29:19.369092
+2025-06-21 02:34:19,201 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:34:19.202227
+2025-06-21 02:34:19,203 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:34:19,252 - INFO - Database connection established.
+2025-06-21 02:34:19,255 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:34:19.255662
+2025-06-21 02:34:19,255 - INFO - Database connection closed at 2025-06-21 02:34:19.255941
+2025-06-21 02:39:19,238 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:39:19.238542
+2025-06-21 02:39:19,239 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:39:19,424 - INFO - Database connection established.
+2025-06-21 02:39:19,428 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:39:19.428259
+2025-06-21 02:39:19,428 - INFO - Database connection closed at 2025-06-21 02:39:19.428610
+2025-06-21 02:44:19,208 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:44:19.209166
+2025-06-21 02:44:19,210 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:44:19,283 - INFO - Database connection established.
+2025-06-21 02:44:19,286 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:44:19.286440
+2025-06-21 02:44:19,286 - INFO - Database connection closed at 2025-06-21 02:44:19.286720
+2025-06-21 02:49:19,596 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:49:19.597028
+2025-06-21 02:49:19,598 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:49:19,666 - INFO - Database connection established.
+2025-06-21 02:49:19,669 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:49:19.669157
+2025-06-21 02:49:19,669 - INFO - Database connection closed at 2025-06-21 02:49:19.669418
+2025-06-21 02:54:19,651 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:54:19.651738
+2025-06-21 02:54:19,652 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:54:19,844 - INFO - Database connection established.
+2025-06-21 02:54:19,846 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:54:19.846861
+2025-06-21 02:54:19,847 - INFO - Database connection closed at 2025-06-21 02:54:19.847135
+2025-06-21 02:59:20,133 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 02:59:20.133659
+2025-06-21 02:59:20,134 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 02:59:20,331 - INFO - Database connection established.
+2025-06-21 02:59:20,334 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 02:59:20.334075
+2025-06-21 02:59:20,334 - INFO - Database connection closed at 2025-06-21 02:59:20.334364
+2025-06-21 03:04:19,173 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:04:19.174093
+2025-06-21 03:04:19,175 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:04:19,249 - INFO - Database connection established.
+2025-06-21 03:04:19,253 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:04:19.253316
+2025-06-21 03:04:19,253 - INFO - Database connection closed at 2025-06-21 03:04:19.253594
+2025-06-21 03:09:19,269 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:09:19.270270
+2025-06-21 03:09:19,272 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:09:19,344 - INFO - Database connection established.
+2025-06-21 03:09:19,346 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:09:19.346958
+2025-06-21 03:09:19,347 - INFO - Database connection closed at 2025-06-21 03:09:19.347240
+2025-06-21 03:14:19,674 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:14:19.675047
+2025-06-21 03:14:19,676 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:14:19,748 - INFO - Database connection established.
+2025-06-21 03:14:19,750 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:14:19.750837
+2025-06-21 03:14:19,751 - INFO - Database connection closed at 2025-06-21 03:14:19.751076
+2025-06-21 03:19:19,881 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:19:19.882283
+2025-06-21 03:19:19,883 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:19:19,933 - INFO - Database connection established.
+2025-06-21 03:19:19,936 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:19:19.935987
+2025-06-21 03:19:19,936 - INFO - Database connection closed at 2025-06-21 03:19:19.936261
+2025-06-21 03:24:19,753 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:24:19.753627
+2025-06-21 03:24:19,754 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:24:19,803 - INFO - Database connection established.
+2025-06-21 03:24:19,806 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:24:19.806629
+2025-06-21 03:24:19,806 - INFO - Database connection closed at 2025-06-21 03:24:19.806900
+2025-06-21 03:29:19,708 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:29:19.708683
+2025-06-21 03:29:19,709 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:29:19,758 - INFO - Database connection established.
+2025-06-21 03:29:19,761 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:29:19.761709
+2025-06-21 03:29:19,762 - INFO - Database connection closed at 2025-06-21 03:29:19.761983
+2025-06-21 03:34:19,508 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:34:19.509327
+2025-06-21 03:34:19,510 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:34:19,583 - INFO - Database connection established.
+2025-06-21 03:34:19,586 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:34:19.586725
+2025-06-21 03:34:19,586 - INFO - Database connection closed at 2025-06-21 03:34:19.586974
+2025-06-21 03:39:19,456 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:39:19.457020
+2025-06-21 03:39:19,457 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:39:19,507 - INFO - Database connection established.
+2025-06-21 03:39:19,510 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:39:19.510564
+2025-06-21 03:39:19,510 - INFO - Database connection closed at 2025-06-21 03:39:19.510870
+2025-06-21 03:44:19,479 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:44:19.479761
+2025-06-21 03:44:19,481 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:44:19,670 - INFO - Database connection established.
+2025-06-21 03:44:19,674 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:44:19.674040
+2025-06-21 03:44:19,674 - INFO - Database connection closed at 2025-06-21 03:44:19.674506
+2025-06-21 03:49:19,964 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:49:19.965374
+2025-06-21 03:49:19,966 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:49:20,036 - INFO - Database connection established.
+2025-06-21 03:49:20,039 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:49:20.039569
+2025-06-21 03:49:20,039 - INFO - Database connection closed at 2025-06-21 03:49:20.039822
+2025-06-21 03:54:19,165 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:54:19.165927
+2025-06-21 03:54:19,166 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:54:19,349 - INFO - Database connection established.
+2025-06-21 03:54:19,352 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:54:19.352011
+2025-06-21 03:54:19,352 - INFO - Database connection closed at 2025-06-21 03:54:19.352309
+2025-06-21 03:59:19,187 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 03:59:19.187583
+2025-06-21 03:59:19,188 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 03:59:19,259 - INFO - Database connection established.
+2025-06-21 03:59:19,262 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 03:59:19.262086
+2025-06-21 03:59:19,262 - INFO - Database connection closed at 2025-06-21 03:59:19.262443
+2025-06-21 04:04:19,297 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:04:19.297940
+2025-06-21 04:04:19,299 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:04:19,373 - INFO - Database connection established.
+2025-06-21 04:04:19,377 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:04:19.377407
+2025-06-21 04:04:19,377 - INFO - Database connection closed at 2025-06-21 04:04:19.377882
+2025-06-21 04:09:20,245 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:09:20.246214
+2025-06-21 04:09:20,247 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:09:20,321 - INFO - Database connection established.
+2025-06-21 04:09:20,324 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:09:20.323976
+2025-06-21 04:09:20,324 - INFO - Database connection closed at 2025-06-21 04:09:20.324215
+2025-06-21 04:14:19,320 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:14:19.321114
+2025-06-21 04:14:19,322 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:14:19,391 - INFO - Database connection established.
+2025-06-21 04:14:19,394 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:14:19.394129
+2025-06-21 04:14:19,394 - INFO - Database connection closed at 2025-06-21 04:14:19.394405
+2025-06-21 04:19:19,181 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:19:19.181499
+2025-06-21 04:19:19,182 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:19:19,232 - INFO - Database connection established.
+2025-06-21 04:19:19,235 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:19:19.235391
+2025-06-21 04:19:19,235 - INFO - Database connection closed at 2025-06-21 04:19:19.235647
+2025-06-21 04:24:19,772 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:24:19.772933
+2025-06-21 04:24:19,773 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:24:19,824 - INFO - Database connection established.
+2025-06-21 04:24:19,827 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:24:19.827939
+2025-06-21 04:24:19,828 - INFO - Database connection closed at 2025-06-21 04:24:19.828210
+2025-06-21 04:29:19,403 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:29:19.403742
+2025-06-21 04:29:19,405 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:29:19,475 - INFO - Database connection established.
+2025-06-21 04:29:19,478 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:29:19.478702
+2025-06-21 04:29:19,479 - INFO - Database connection closed at 2025-06-21 04:29:19.478980
+2025-06-21 04:34:19,201 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:34:19.201568
+2025-06-21 04:34:19,202 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:34:19,275 - INFO - Database connection established.
+2025-06-21 04:34:19,278 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:34:19.278375
+2025-06-21 04:34:19,278 - INFO - Database connection closed at 2025-06-21 04:34:19.278652
+2025-06-21 04:39:19,503 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:39:19.503966
+2025-06-21 04:39:19,504 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:39:19,554 - INFO - Database connection established.
+2025-06-21 04:39:19,556 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:39:19.556921
+2025-06-21 04:39:19,557 - INFO - Database connection closed at 2025-06-21 04:39:19.557190
+2025-06-21 04:44:19,207 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:44:19.207783
+2025-06-21 04:44:19,209 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:44:19,279 - INFO - Database connection established.
+2025-06-21 04:44:19,282 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:44:19.282755
+2025-06-21 04:44:19,283 - INFO - Database connection closed at 2025-06-21 04:44:19.283029
+2025-06-21 04:49:19,228 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:49:19.229186
+2025-06-21 04:49:19,230 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:49:19,299 - INFO - Database connection established.
+2025-06-21 04:49:19,302 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:49:19.302800
+2025-06-21 04:49:19,303 - INFO - Database connection closed at 2025-06-21 04:49:19.303068
+2025-06-21 04:54:19,308 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:54:19.308724
+2025-06-21 04:54:19,309 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:54:19,381 - INFO - Database connection established.
+2025-06-21 04:54:19,384 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:54:19.384550
+2025-06-21 04:54:19,384 - INFO - Database connection closed at 2025-06-21 04:54:19.384802
+2025-06-21 04:59:19,505 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 04:59:19.505514
+2025-06-21 04:59:19,506 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 04:59:19,577 - INFO - Database connection established.
+2025-06-21 04:59:19,580 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 04:59:19.580519
+2025-06-21 04:59:19,580 - INFO - Database connection closed at 2025-06-21 04:59:19.580797
+2025-06-21 05:04:19,447 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:04:19.448061
+2025-06-21 05:04:19,449 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:04:19,522 - INFO - Database connection established.
+2025-06-21 05:04:19,526 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:04:19.526011
+2025-06-21 05:04:19,526 - INFO - Database connection closed at 2025-06-21 05:04:19.526314
+2025-06-21 05:09:19,884 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:09:19.884502
+2025-06-21 05:09:19,885 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:09:20,079 - INFO - Database connection established.
+2025-06-21 05:09:20,082 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:09:20.082911
+2025-06-21 05:09:20,083 - INFO - Database connection closed at 2025-06-21 05:09:20.083191
+2025-06-21 05:14:19,539 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:14:19.539815
+2025-06-21 05:14:19,540 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:14:19,614 - INFO - Database connection established.
+2025-06-21 05:14:19,617 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:14:19.617225
+2025-06-21 05:14:19,617 - INFO - Database connection closed at 2025-06-21 05:14:19.617555
+2025-06-21 05:19:19,456 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:19:19.456596
+2025-06-21 05:19:19,457 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:19:19,505 - INFO - Database connection established.
+2025-06-21 05:19:19,508 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:19:19.508797
+2025-06-21 05:19:19,509 - INFO - Database connection closed at 2025-06-21 05:19:19.509046
+2025-06-21 05:24:19,800 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:24:19.800592
+2025-06-21 05:24:19,801 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:24:19,853 - INFO - Database connection established.
+2025-06-21 05:24:19,856 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:24:19.856432
+2025-06-21 05:24:19,856 - INFO - Database connection closed at 2025-06-21 05:24:19.856730
+2025-06-21 05:29:19,874 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:29:19.875197
+2025-06-21 05:29:19,876 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:29:19,926 - INFO - Database connection established.
+2025-06-21 05:29:19,929 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:29:19.929637
+2025-06-21 05:29:19,929 - INFO - Database connection closed at 2025-06-21 05:29:19.929886
+2025-06-21 05:34:19,288 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:34:19.288933
+2025-06-21 05:34:19,289 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:34:19,340 - INFO - Database connection established.
+2025-06-21 05:34:19,343 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:34:19.343468
+2025-06-21 05:34:19,343 - INFO - Database connection closed at 2025-06-21 05:34:19.343715
+2025-06-21 05:39:19,515 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:39:19.515706
+2025-06-21 05:39:19,516 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:39:19,565 - INFO - Database connection established.
+2025-06-21 05:39:19,568 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:39:19.568586
+2025-06-21 05:39:19,568 - INFO - Database connection closed at 2025-06-21 05:39:19.568850
+2025-06-21 05:44:20,304 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:44:20.304426
+2025-06-21 05:44:20,305 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:44:20,355 - INFO - Database connection established.
+2025-06-21 05:44:20,360 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:44:20.360890
+2025-06-21 05:44:20,361 - INFO - Database connection closed at 2025-06-21 05:44:20.361451
+2025-06-21 05:49:19,824 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:49:19.824680
+2025-06-21 05:49:19,826 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:49:20,035 - INFO - Database connection established.
+2025-06-21 05:49:20,038 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:49:20.038767
+2025-06-21 05:49:20,039 - INFO - Database connection closed at 2025-06-21 05:49:20.039030
+2025-06-21 05:54:19,564 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:54:19.564770
+2025-06-21 05:54:19,565 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:54:19,636 - INFO - Database connection established.
+2025-06-21 05:54:19,639 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:54:19.639119
+2025-06-21 05:54:19,639 - INFO - Database connection closed at 2025-06-21 05:54:19.639383
+2025-06-21 05:59:19,684 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 05:59:19.684447
+2025-06-21 05:59:19,685 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 05:59:19,899 - INFO - Database connection established.
+2025-06-21 05:59:19,904 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 05:59:19.904013
+2025-06-21 05:59:19,904 - INFO - Database connection closed at 2025-06-21 05:59:19.904408
+2025-06-21 06:04:19,459 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 06:04:19.459690
+2025-06-21 06:04:19,463 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 06:04:19,538 - INFO - Database connection established.
+2025-06-21 06:04:19,541 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 06:04:19.541218
+2025-06-21 06:04:19,541 - INFO - Database connection closed at 2025-06-21 06:04:19.541445
+2025-06-21 11:44:21,996 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 11:44:21.997806
+2025-06-21 11:44:21,999 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 11:44:22,073 - INFO - Database connection established.
+2025-06-21 11:44:22,082 - INFO - Battery_alerts table not found, creating it...
+2025-06-21 11:44:22,121 - ERROR - Error initializing Battery_alerts table: relation "battery_alerts" already exists
+
+2025-06-21 11:44:22,122 - ERROR - Error checking battery alert: relation "battery_alerts" already exists
+ at 2025-06-21 11:44:22.121981
+2025-06-21 11:44:22,122 - INFO - Database connection closed.
+2025-06-21 11:45:59,007 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 11:45:59.007498
+2025-06-21 11:45:59,009 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 11:45:59,087 - INFO - Database connection established.
+2025-06-21 11:45:59,096 - INFO - Battery_alerts table already exists.
+2025-06-21 11:45:59,098 - INFO - Updated Battery_alerts emails column to include mbtlfernando@gmail.com if missing.
+2025-06-21 11:45:59,104 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 11:45:59.104908
+2025-06-21 11:45:59,107 - INFO - Database connection closed.
+2025-06-21 11:46:47,716 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 11:46:47.717333
+2025-06-21 11:46:47,718 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 11:46:47,790 - INFO - Database connection established.
+2025-06-21 11:46:47,800 - INFO - Battery_alerts table already exists.
+2025-06-21 11:46:47,802 - INFO - Updated Battery_alerts emails column to include mbtlfernando@gmail.com if missing.
+2025-06-21 11:46:47,807 - INFO - Retrieved alerts: [RealDictRow({'id': 1, 'emails': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 20, 22, 49, 41, 531928), 'users': 'Thilak Fernando'})]
+2025-06-21 11:46:47,807 - INFO - Evaluating battery: 90.0%
+2025-06-21 11:46:47,808 - INFO - Battery alert triggered at 2025-06-21 11:46:47.808120 for 90.0%
+2025-06-21 11:46:47,808 - INFO - Triggering email to: g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com with user Thilak Fernando at 2025-06-21 11:46:47.808335
+2025-06-21 11:46:47,808 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 11:46:47.808519
+2025-06-21 11:46:51,332 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 11:46:51.332484
+2025-06-21 11:46:51,334 - INFO - Updated last_alert to 2025-06-21 11:46:51.334798
+2025-06-21 11:46:51,335 - INFO - Database connection closed.
+2025-06-21 15:16:41,290 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\battery_alert_log.log
+Test write successful at 2025-06-21 15:16:41.291154
+2025-06-21 15:16:41,292 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:16:41,377 - INFO - Database connection established.
+2025-06-21 15:16:41,389 - INFO - Battery_alerts table already exists.
+2025-06-21 15:16:41,399 - INFO - Updated Battery_alerts emails column to include mbtlfernando@gmail.com if missing.
+2025-06-21 15:16:41,407 - ERROR - Invalid battery level format: Battery info not available at 2025-06-21 15:16:41.407902
+2025-06-21 15:16:41,409 - INFO - Database connection closed.

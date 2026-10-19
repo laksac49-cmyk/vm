@@ -1,0 +1,121 @@
+ .filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: center;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  flex-direction: row; /* Horizontal layout for filter groups */
+  align-items: flex-start;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  flex: 1;
+}
+
+.filter-group label {
+  font-size: 12px;
+  color: #2c3e50;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.filter-group select {
+  padding: 8px 10px;
+  border: 2px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #34495e;
+  background: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.2);
+}
+
+.react-datetime-picker {
+  border: 2px solid #ecf0f1;
+  border-radius: 6px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #ffffff;
+  width: 100%;
+  font-size: 12px;
+}
+
+.react-datetime-picker__wrapper {
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.react-datetime-picker__inputGroup {
+  flex: 1;
+  display: flex; /* Force horizontal layout */
+  gap: 4px; /* Small gap between input fields */
+  align-items: center;
+}
+
+.react-datetime-picker__inputGroup__input {
+  font-size: 12px;
+  color: #34495e;
+  border: none;
+  padding: 0 4px; /* Add slight padding for readability */
+  background: transparent;
+  width: auto; /* Allow natural width */
+  display: inline-flex; /* Ensure inline display */
+}
+
+.react-datetime-picker__inputGroup__input:focus {
+  outline: none;
+}
+
+.react-datetime-picker__calendar-button {
+  margin-left: 8px;
+  padding: 4px;
+  color: #3498db;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.react-datetime-picker__calendar-button:hover {
+  color: #2980b9;
+}
+
+.react-datetime-picker__calendar-button:enabled:focus {
+  outline: none;
+  color: #2980b9;
+}
+
+.react-datetime-picker__calendar {
+  z-index: 1000;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border: 2px solid #ecf0f1;
+  font-size: 12px;
+}
+
+.react-datetime-picker__calendar-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.react-datetime-picker__inputGroup__leadingZero {
+  display: none; /* Hide leading zeros for cleaner look */
+}
