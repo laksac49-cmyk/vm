@@ -1,0 +1,7 @@
+ /* index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1A2980, #26D0CE);
+  color: #333;
+}

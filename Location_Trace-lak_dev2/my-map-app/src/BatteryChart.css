@@ -1,0 +1,67 @@
+.battery-chart-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.battery-chart-container.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1000;
+}
+
+.battery-chart-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.fullscreen-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chart-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .battery-chart-container {
+    height: 300px; /* Adjusted for tablets */
+  }
+  .fullscreen-button {
+    top: 5px;
+    right: 5px;
+    padding: 3px 6px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .battery-chart-container {
+    height: 250px; /* Adjusted for mobile */
+  }
+  .fullscreen-button {
+    top: 5px;
+    right: 5px;
+    padding: 2px 4px;
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,52 @@
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ccc;
+}
+
+.filter-bar form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-bar button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-bar button:hover {
+  background-color: #45a049;
+}
+
+.filter-bar button[type="button"] {
+  background-color: #ff4444;
+}
+
+.filter-bar button[type="button"]:hover {
+  background-color: #cc0000;
+}

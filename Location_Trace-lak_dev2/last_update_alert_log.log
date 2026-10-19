@@ -1,0 +1,273 @@
+Log file created at 2025-06-21 13:59:34.443261
+2025-06-21 13:59:34,445 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 13:59:34.446340
+2025-06-21 13:59:34,447 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 13:59:34,555 - INFO - Database connection established.
+2025-06-21 13:59:34,574 - INFO - last_update_alerts table already exists.
+2025-06-21 13:59:34,583 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 13:59:34,585 - INFO - Retrieved alerts: []
+2025-06-21 13:59:34,586 - INFO - Database connection closed.
+2025-06-21 14:00:12,182 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:00:12.183056
+2025-06-21 14:00:12,184 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:00:12,259 - INFO - Database connection established.
+2025-06-21 14:00:12,268 - INFO - last_update_alerts table already exists.
+2025-06-21 14:00:12,272 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:00:12,273 - INFO - Retrieved alerts: []
+2025-06-21 14:00:12,274 - INFO - Database connection closed.
+2025-06-21 14:03:06,711 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:03:06.711666
+2025-06-21 14:03:06,712 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:03:06,790 - INFO - Database connection established.
+2025-06-21 14:03:06,801 - INFO - last_update_alerts table already exists.
+2025-06-21 14:03:06,809 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:03:06,810 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': None})]
+2025-06-21 14:03:06,811 - INFO - Triggering last update alert: 24.0 minutes since last update
+2025-06-21 14:03:06,812 - ERROR - Unexpected error in last update check: 'users' at 2025-06-21 14:03:06.812133
+2025-06-21 14:03:06,812 - INFO - Database connection closed.
+2025-06-21 14:04:15,932 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:04:15.932881
+2025-06-21 14:04:15,934 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:04:16,009 - INFO - Database connection established.
+2025-06-21 14:04:16,020 - INFO - last_update_alerts table already exists.
+2025-06-21 14:04:16,027 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:04:16,027 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': None, 'users': 'Thilak Fernando'})]
+2025-06-21 14:04:16,028 - INFO - Triggering last update alert: 25.1 minutes since last update
+2025-06-21 14:04:16,028 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:04:16.028417
+2025-06-21 14:04:19,897 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:04:19.897215
+2025-06-21 14:04:19,923 - INFO - Updated last_alert to 2025-06-21 14:04:19.922937
+2025-06-21 14:04:19,925 - INFO - Database connection closed.
+2025-06-21 14:11:06,863 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:11:06.864257
+2025-06-21 14:11:06,865 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:11:06,945 - INFO - Database connection established.
+2025-06-21 14:11:06,957 - INFO - last_update_alerts table already exists.
+2025-06-21 14:11:06,964 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:11:06,965 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 4, 16, 9398), 'users': 'Thilak Fernando'})]
+2025-06-21 14:11:06,965 - INFO - No last update alert: 32.0 minutes, last_alert check passed
+2025-06-21 14:11:06,965 - INFO - Database connection closed.
+2025-06-21 14:16:06,772 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:16:06.773027
+2025-06-21 14:16:06,774 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:16:06,843 - INFO - Database connection established.
+2025-06-21 14:16:06,854 - INFO - last_update_alerts table already exists.
+2025-06-21 14:16:06,860 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:16:06,861 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 4, 16, 9398), 'users': 'Thilak Fernando'})]
+2025-06-21 14:16:06,861 - INFO - Triggering last update alert: 37.0 minutes since last update
+2025-06-21 14:16:06,862 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:16:06.862084
+2025-06-21 14:16:10,374 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:16:10.374320
+2025-06-21 14:16:10,393 - INFO - Updated last_alert to 2025-06-21 14:16:10.393544
+2025-06-21 14:16:10,395 - INFO - Database connection closed.
+2025-06-21 14:21:07,005 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:21:07.006647
+2025-06-21 14:21:07,008 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:21:07,099 - INFO - Database connection established.
+2025-06-21 14:21:07,113 - INFO - last_update_alerts table already exists.
+2025-06-21 14:21:07,122 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:21:07,122 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 16, 6, 843829), 'users': 'Thilak Fernando'})]
+2025-06-21 14:21:07,123 - INFO - No last update alert: 42.0 minutes, last_alert check passed
+2025-06-21 14:21:07,123 - INFO - Database connection closed.
+2025-06-21 14:26:06,835 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:26:06.835684
+2025-06-21 14:26:06,836 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:26:06,916 - INFO - Database connection established.
+2025-06-21 14:26:06,928 - INFO - last_update_alerts table already exists.
+2025-06-21 14:26:06,933 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:26:06,934 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 16, 6, 843829), 'users': 'Thilak Fernando'})]
+2025-06-21 14:26:06,934 - INFO - Triggering last update alert: 47.0 minutes since last update
+2025-06-21 14:26:06,934 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:26:06.934544
+2025-06-21 14:26:10,447 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:26:10.447189
+2025-06-21 14:26:10,452 - INFO - Updated last_alert to 2025-06-21 14:26:10.452227
+2025-06-21 14:26:10,452 - INFO - Database connection closed.
+2025-06-21 14:31:06,863 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:31:06.863991
+2025-06-21 14:31:06,869 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:31:06,951 - INFO - Database connection established.
+2025-06-21 14:31:06,961 - INFO - last_update_alerts table already exists.
+2025-06-21 14:31:06,967 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:31:06,968 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 26, 6, 916817), 'users': 'Thilak Fernando'})]
+2025-06-21 14:31:06,968 - INFO - No last update alert: 52.0 minutes, last_alert check passed
+2025-06-21 14:31:06,973 - INFO - Database connection closed.
+2025-06-21 14:36:06,831 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:36:06.831601
+2025-06-21 14:36:06,832 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:36:06,915 - INFO - Database connection established.
+2025-06-21 14:36:06,928 - INFO - last_update_alerts table already exists.
+2025-06-21 14:36:06,933 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:36:06,934 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 26, 6, 916817), 'users': 'Thilak Fernando'})]
+2025-06-21 14:36:06,934 - INFO - Triggering last update alert: 57.0 minutes since last update
+2025-06-21 14:36:06,934 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:36:06.934607
+2025-06-21 14:36:10,559 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:36:10.559081
+2025-06-21 14:36:10,562 - INFO - Updated last_alert to 2025-06-21 14:36:10.562071
+2025-06-21 14:36:10,562 - INFO - Database connection closed.
+2025-06-21 14:41:06,837 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:41:06.837493
+2025-06-21 14:41:06,840 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:41:06,921 - INFO - Database connection established.
+2025-06-21 14:41:06,933 - INFO - last_update_alerts table already exists.
+2025-06-21 14:41:06,938 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:41:06,939 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 36, 6, 915814), 'users': 'Thilak Fernando'})]
+2025-06-21 14:41:06,939 - INFO - No last update alert: 62.0 minutes, last_alert check passed
+2025-06-21 14:41:06,939 - INFO - Database connection closed.
+2025-06-21 14:46:06,815 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:46:06.816355
+2025-06-21 14:46:06,817 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:46:06,898 - INFO - Database connection established.
+2025-06-21 14:46:06,910 - INFO - last_update_alerts table already exists.
+2025-06-21 14:46:06,915 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:46:06,916 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 36, 6, 915814), 'users': 'Thilak Fernando'})]
+2025-06-21 14:46:06,916 - INFO - Triggering last update alert: 67.0 minutes since last update
+2025-06-21 14:46:06,916 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:46:06.916386
+2025-06-21 14:46:11,219 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:46:11.218985
+2025-06-21 14:46:11,224 - INFO - Updated last_alert to 2025-06-21 14:46:11.223997
+2025-06-21 14:46:11,224 - INFO - Database connection closed.
+2025-06-21 14:51:06,789 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:51:06.789590
+2025-06-21 14:51:06,791 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:51:06,980 - INFO - Database connection established.
+2025-06-21 14:51:06,990 - INFO - last_update_alerts table already exists.
+2025-06-21 14:51:06,996 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:51:06,997 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 46, 6, 898316), 'users': 'Thilak Fernando'})]
+2025-06-21 14:51:06,997 - INFO - No last update alert: 72.0 minutes, last_alert check passed
+2025-06-21 14:51:06,998 - INFO - Database connection closed.
+2025-06-21 14:53:00,812 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:53:00.812717
+2025-06-21 14:53:00,813 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:53:00,893 - INFO - Database connection established.
+2025-06-21 14:53:00,903 - INFO - last_update_alerts table already exists.
+2025-06-21 14:53:00,910 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:53:00,911 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 46, 6, 898316), 'users': 'Thilak Fernando'})]
+2025-06-21 14:53:00,911 - INFO - No last update alert: 73.9 minutes, last_alert check passed
+2025-06-21 14:53:00,911 - INFO - Database connection closed.
+2025-06-21 14:56:06,838 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 14:56:06.839427
+2025-06-21 14:56:06,840 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 14:56:06,923 - INFO - Database connection established.
+2025-06-21 14:56:06,934 - INFO - last_update_alerts table already exists.
+2025-06-21 14:56:06,939 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 14:56:06,940 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 46, 6, 898316), 'users': 'Thilak Fernando'})]
+2025-06-21 14:56:06,940 - INFO - Triggering last update alert: 77.0 minutes since last update
+2025-06-21 14:56:06,940 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:56:06.940598
+2025-06-21 14:56:10,796 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 14:56:10.796719
+2025-06-21 14:56:10,801 - INFO - Updated last_alert to 2025-06-21 14:56:10.801858
+2025-06-21 14:56:10,802 - INFO - Database connection closed.
+2025-06-21 15:01:06,849 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:01:06.849637
+2025-06-21 15:01:06,852 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:01:06,927 - INFO - Database connection established.
+2025-06-21 15:01:06,937 - INFO - last_update_alerts table already exists.
+2025-06-21 15:01:06,943 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 15:01:06,944 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 56, 6, 923817), 'users': 'Thilak Fernando'})]
+2025-06-21 15:01:06,944 - INFO - No last update alert: 82.0 minutes, last_alert check passed
+2025-06-21 15:01:06,944 - INFO - Database connection closed.
+2025-06-21 15:06:06,912 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:06:06.913115
+2025-06-21 15:06:06,916 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:06:07,001 - INFO - Database connection established.
+2025-06-21 15:06:07,012 - INFO - last_update_alerts table already exists.
+2025-06-21 15:06:07,019 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 15:06:07,019 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 14, 56, 6, 923817), 'users': 'Thilak Fernando'})]
+2025-06-21 15:06:07,019 - INFO - Triggering last update alert: 87.0 minutes since last update
+2025-06-21 15:06:07,020 - INFO - Attempting to send email to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 15:06:07.020071
+2025-06-21 15:06:10,500 - INFO - Email sent to g20016.lakmal@gmail.com, mbtlfernando@gmail.com, lakmalsachithsilva772@gmail.com at 2025-06-21 15:06:10.500125
+2025-06-21 15:06:10,504 - INFO - Updated last_alert to 2025-06-21 15:06:10.504292
+2025-06-21 15:06:10,504 - INFO - Database connection closed.
+2025-06-21 15:11:06,857 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:11:06.858469
+2025-06-21 15:11:06,859 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:11:06,940 - INFO - Database connection established.
+2025-06-21 15:11:06,952 - INFO - last_update_alerts table already exists.
+2025-06-21 15:11:06,958 - INFO - Last update from location_data: 2025-06-21 13:39:08
+2025-06-21 15:11:06,959 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:11:06,959 - INFO - No last update alert: 92.0 minutes, last_alert check passed
+2025-06-21 15:11:06,959 - INFO - Database connection closed.
+2025-06-21 15:16:07,112 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:16:07.113069
+2025-06-21 15:16:07,114 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:16:07,219 - INFO - Database connection established.
+2025-06-21 15:16:07,230 - INFO - last_update_alerts table already exists.
+2025-06-21 15:16:07,238 - INFO - Last update from location_data: 2025-06-21 15:14:36
+2025-06-21 15:16:07,239 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:16:07,239 - INFO - No last update alert: 1.5 minutes, last_alert check passed
+2025-06-21 15:16:07,239 - INFO - Database connection closed.
+2025-06-21 15:21:06,860 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:21:06.860783
+2025-06-21 15:21:06,861 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:21:06,947 - INFO - Database connection established.
+2025-06-21 15:21:06,959 - INFO - last_update_alerts table already exists.
+2025-06-21 15:21:06,965 - INFO - Last update from location_data: 2025-06-21 15:20:38
+2025-06-21 15:21:06,966 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:21:06,967 - INFO - No last update alert: 0.5 minutes, last_alert check passed
+2025-06-21 15:21:06,967 - INFO - Database connection closed.
+2025-06-21 15:26:06,840 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:26:06.841345
+2025-06-21 15:26:06,843 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:26:06,920 - INFO - Database connection established.
+2025-06-21 15:26:06,931 - INFO - last_update_alerts table already exists.
+2025-06-21 15:26:06,938 - INFO - Last update from location_data: 2025-06-21 15:25:18
+2025-06-21 15:26:06,939 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:26:06,939 - INFO - No last update alert: 0.8 minutes, last_alert check passed
+2025-06-21 15:26:06,939 - INFO - Database connection closed.
+2025-06-21 15:31:06,825 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:31:06.825524
+2025-06-21 15:31:06,826 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:31:06,900 - INFO - Database connection established.
+2025-06-21 15:31:06,910 - INFO - last_update_alerts table already exists.
+2025-06-21 15:31:06,917 - INFO - Last update from location_data: 2025-06-21 15:30:18
+2025-06-21 15:31:06,918 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:31:06,919 - INFO - No last update alert: 0.8 minutes, last_alert check passed
+2025-06-21 15:31:06,919 - INFO - Database connection closed.
+2025-06-21 15:36:06,818 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:36:06.819137
+2025-06-21 15:36:06,824 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:36:06,896 - INFO - Database connection established.
+2025-06-21 15:36:06,906 - INFO - last_update_alerts table already exists.
+2025-06-21 15:36:06,913 - INFO - Last update from location_data: 2025-06-21 15:34:18
+2025-06-21 15:36:06,914 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:36:06,914 - INFO - No last update alert: 1.8 minutes, last_alert check passed
+2025-06-21 15:36:06,915 - INFO - Database connection closed.
+2025-06-21 15:41:06,868 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:41:06.869282
+2025-06-21 15:41:06,870 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:41:06,952 - INFO - Database connection established.
+2025-06-21 15:41:06,962 - INFO - last_update_alerts table already exists.
+2025-06-21 15:41:06,970 - INFO - Last update from location_data: 2025-06-21 15:40:18
+2025-06-21 15:41:06,971 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:41:06,972 - INFO - No last update alert: 0.8 minutes, last_alert check passed
+2025-06-21 15:41:06,972 - INFO - Database connection closed.
+2025-06-21 15:46:07,251 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:46:07.252326
+2025-06-21 15:46:07,255 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:46:07,486 - INFO - Database connection established.
+2025-06-21 15:46:07,516 - INFO - last_update_alerts table already exists.
+2025-06-21 15:46:07,545 - INFO - Last update from location_data: 2025-06-21 15:44:18
+2025-06-21 15:46:07,547 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:46:07,547 - INFO - No last update alert: 1.8 minutes, last_alert check passed
+2025-06-21 15:46:07,548 - INFO - Database connection closed.
+2025-06-21 15:51:11,414 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:51:11.414748
+2025-06-21 15:51:11,417 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:51:11,579 - INFO - Database connection established.
+2025-06-21 15:51:11,614 - INFO - last_update_alerts table already exists.
+2025-06-21 15:51:11,623 - INFO - Last update from location_data: 2025-06-21 15:50:18
+2025-06-21 15:51:11,626 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:51:11,630 - INFO - No last update alert: 0.9 minutes, last_alert check passed
+2025-06-21 15:51:11,631 - INFO - Database connection closed.
+2025-06-21 15:56:07,990 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 15:56:07.991158
+2025-06-21 15:56:08,001 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 15:56:08,153 - INFO - Database connection established.
+2025-06-21 15:56:08,244 - INFO - last_update_alerts table already exists.
+2025-06-21 15:56:08,258 - INFO - Last update from location_data: 2025-06-21 15:54:18
+2025-06-21 15:56:08,259 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 15:56:08,259 - INFO - No last update alert: 1.8 minutes, last_alert check passed
+2025-06-21 15:56:08,259 - INFO - Database connection closed.
+2025-06-21 16:01:07,751 - INFO - Script started execution. Log path: D:\lakmal-code\Location_Trace\last_update_alert_log.log
+Test write successful at 2025-06-21 16:01:07.752047
+2025-06-21 16:01:07,754 - INFO - Required modules (psycopg2, smtplib) are available.
+2025-06-21 16:01:07,892 - INFO - Database connection established.
+2025-06-21 16:01:07,905 - INFO - last_update_alerts table already exists.
+2025-06-21 16:01:07,913 - INFO - Last update from location_data: 2025-06-21 15:58:22
+2025-06-21 16:01:07,914 - INFO - Retrieved alerts: [RealDictRow({'email': 'g20016.lakmal@gmail.com,mbtlfernando@gmail.com,lakmalsachithsilva772@gmail.com', 'enabled': True, 'last_alert': datetime.datetime(2025, 6, 21, 15, 6, 7, 1749), 'users': 'Thilak Fernando'})]
+2025-06-21 16:01:07,915 - INFO - No last update alert: 2.8 minutes, last_alert check passed
+2025-06-21 16:01:07,915 - INFO - Database connection closed.
