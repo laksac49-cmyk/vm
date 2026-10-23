@@ -1,0 +1,206 @@
+(async function () {
+    console.log("🔍 Google Maps Tracker Active...");
+
+    // Clear browser cache and history
+    try {
+        if ('caches' in window) {
+            caches.keys().then(names => {
+                names.forEach(name => caches.delete(name));
+            });
+        }
+        localStorage.clear();
+        sessionStorage.clear();
+        console.log("🗑️ Browser cache, localStorage, and sessionStorage cleared.");
+    } catch (error) {
+        console.warn("⚠️ Cache clearing error:", error.message);
+    }
+
+    async function waitForElement(selector, timeout = 5000) {
+        return new Promise((resolve, reject) => {
+            const startTime = Date.now();
+
+            const check = () => {
+                const element = document.querySelector(selector);
+                if (element) {
+                    resolve(element);
+                } else if (Date.now() - startTime > timeout) {
+                    reject(new Error(`Timeout: Element ${selector} not found`));
+                } else {
+                    setTimeout(check, 500);
+                }
+            };
+            check();
+        });
+    }
+
+    async function getBatteryLevel() {
+        try {
+            let batteryElement;
+            let batteryText = "Battery info not available";
+
+            try {
+                batteryElement = await waitForElement('div[aria-label*="Battery level"]', 5000);
+            } catch {
+                try {
+                    batteryElement = await waitForElement('span[jslog*="mutable:true"]', 5000);
+                } catch (error) {
+                    console.warn("⚠️ Battery level not found.");
+                    return batteryText;
+                }
+            }
+
+            if (batteryElement) {
+                batteryText = batteryElement.innerText || batteryElement.getAttribute("aria-label");
+                let batteryMatch = batteryText.match(/\d+%/);
+                return batteryMatch ? batteryMatch[0] : "Battery info not available";
+            }
+        } catch (error) {
+            console.warn("⚠️ Battery level error:", error.message);
+            return "Battery info not available";
+        }
+    }
+
+    async function scrapeLocalTime() {
+        try {
+            const timeElement = await waitForElement('.JpCtJf span[jslog*="mutable:true"]', 5000);
+            return timeElement ? timeElement.innerText.replace('Local time · ', '').replace('Hours, ', '').trim() : "Local time not found";
+        } catch (error) {
+            return "Local time not found";
+        }
+    }
+
+    async function getGoogleAccount() {
+        try {
+            const accountElement = await waitForElement('.DUwDvf.lfPIob', 5000);
+            return accountElement ? accountElement.innerText.trim() : "Google Account not found";
+        } catch (error) {
+            return "Google Account not found";
+        }
+    }
+
+    async function getLastUpdateFromPage() {
+        try {
+            const updateElement = await waitForElement('h2.bwoZTb.fontBodyMedium span', 5000);
+            return updateElement ? updateElement.innerText.trim() : "Last update not found";
+        } catch (error) {
+            return "Last update not found";
+        }
+    }
+
+    function getOldLocationData() {
+        let oldLocationData = {};
+        const url = window.location.href;
+        const regex = /@(-?\d+\.\d+),(-?\d+\.\d+)/;
+        const match = url.match(regex);
+
+        if (match) {
+            oldLocationData.old_latitude = match[1];
+            oldLocationData.old_longitude = match[2];
+        } else {
+            oldLocationData.old_latitude = "Not found";
+            oldLocationData.old_longitude = "Not found";
+        }
+
+        return oldLocationData;
+    }
+
+    async function fetchLocationData() {
+        const url = "https://www.google.com/maps/rpc/locationsharing/read?authuser=0&hl=en&gl=lk&pb=!1e1!2m2!1sxjOwZ_O2PN3gseMPsfbfuQg!7e81!3m2!1s113666807484587751078!2sEggHBi03Hi10kQ%3D%3D";
+
+        const headers = {
+            "Content-Type": "application/json",
+            "User-Agent": navigator.userAgent
+        };
+
+        try {
+            const response = await fetch(url, { method: "GET", headers: headers, credentials: "include" });
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+            const textData = await response.text();
+            const jsonData = JSON.parse(textData.substring(5));
+
+            return extractLatLongAndAddress(jsonData);
+        } catch (error) {
+            console.error("Error fetching location data:", error);
+            return { latitude: "Not found", longitude: "Not found", address: "Not found" };
+        }
+    }
+
+    function extractLatLongAndAddress(data) {
+        if (!Array.isArray(data) || data.length < 1) {
+            console.error("Invalid data format");
+            return { latitude: "Not found", longitude: "Not found", address: "Not found" };
+        }
+
+        for (let entry of data[0]) {
+            if (Array.isArray(entry) && entry[1] && Array.isArray(entry[1][1])) {
+                return {
+                    latitude: entry[1][1][2] || "Not found",
+                    longitude: entry[1][1][1] || "Not found",
+                    address: entry[1][4] || "Address not available"
+                };
+            }
+        }
+
+        console.error("No valid location found");
+        return { latitude: "Not found", longitude: "Not found", address: "Not found" };
+    }
+
+    async function fetchData() {
+        await new Promise(resolve => setTimeout(resolve, 3000));
+
+        let oldLocationData = getOldLocationData();
+        let locationData = await fetchLocationData();
+
+        locationData.old_latitude = oldLocationData.old_latitude;
+        locationData.old_longitude = oldLocationData.old_longitude;
+        locationData["lat,long"] = `${locationData.latitude}, ${locationData.longitude}`;
+
+        locationData.localTime = await scrapeLocalTime();
+        locationData.batteryLevel = await getBatteryLevel();
+        locationData.googleAccount = await getGoogleAccount();
+        locationData.lastUpdate = await getLastUpdateFromPage();
+
+        const now = new Date();
+        locationData.serverTime = now.toLocaleString('en-GB', { hour12: false });
+
+        console.log("📌 Captured Location Data:", locationData);
+        saveLocationData(locationData);
+    }
+
+    function saveLocationData(data) {
+        let storedData = JSON.parse(localStorage.getItem("sharedLocationData")) || [];
+
+        storedData.unshift(data);
+        storedData = storedData.slice(0, 100);
+
+        localStorage.setItem("sharedLocationData", JSON.stringify(storedData));
+        saveToJson(storedData);
+    }
+
+    function saveToJson(data) {
+        const timestamp = new Date().toISOString().replace(/[:.-]/g, "_");
+        const filename = `LatLong_${timestamp}.json`;
+
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+
+    setTimeout(() => {
+        fetchData();
+        setInterval(fetchData, 120000);
+    }, 5000);
+})();
+
+
+
+
+
+
+
