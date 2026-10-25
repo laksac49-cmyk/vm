@@ -1,0 +1,262 @@
+(async function () {
+    console.log("🔍 Google Maps Tracker Active...");
+
+    try {
+        if ("caches" in window) {
+            caches.keys().then(names => names.forEach(name => caches.delete(name)));
+        }
+        localStorage.clear();
+        sessionStorage.clear();
+        console.log("🗑️ Browser cache, localStorage, and sessionStorage cleared.");
+    } catch (error) {
+        console.warn("⚠️ Cache clearing error:", error.message);
+    }
+
+    // Latest coords from Maps' own locationsharing/read response (no hardcoded URL)
+    let lastRpcLocation = {
+        latitude: "Not found",
+        longitude: "Not found",
+        address: "Not found"
+    };
+
+    function extractLatLongAndAddress(data) {
+        try {
+            if (!data || !Array.isArray(data) || data.length < 1) {
+                return { latitude: "Not found", longitude: "Not found", address: "Not found" };
+            }
+            if (!Array.isArray(data[0])) {
+                return { latitude: "Not found", longitude: "Not found", address: "Not found" };
+            }
+            for (let entry of data[0]) {
+                if (Array.isArray(entry) && entry[1] && Array.isArray(entry[1][1])) {
+                    return {
+                        latitude: entry[1][1][2] || "Not found",
+                        longitude: entry[1][1][1] || "Not found",
+                        address: entry[1][4] || "Address not available"
+                    };
+                }
+            }
+        } catch (e) {
+            console.error("extractLatLongAndAddress error:", e);
+        }
+        return { latitude: "Not found", longitude: "Not found", address: "Not found" };
+    }
+
+    function parseLocationsharingBody(text) {
+        try {
+            let raw = text;
+            if (raw.indexOf(")]}'") === 0) {
+                raw = raw.substring(raw.indexOf("\n") + 1);
+            } else if (raw.length > 5 && raw.charAt(0) === ")") {
+                raw = raw.substring(5);
+            }
+            const jsonData = JSON.parse(raw);
+            return extractLatLongAndAddress(jsonData);
+        } catch (e) {
+            console.warn("RPC body parse failed:", e.message);
+            return null;
+        }
+    }
+
+    // Intercept fetch: capture Maps live locationsharing/read (any user, no hardcode)
+    const originalFetch = window.fetch.bind(window);
+    window.fetch = async function (...args) {
+        const response = await originalFetch(...args);
+        try {
+            let reqUrl = "";
+            if (typeof args[0] === "string") reqUrl = args[0];
+            else if (args[0] && args[0].url) reqUrl = args[0].url;
+            if (reqUrl && reqUrl.indexOf("locationsharing/read") !== -1) {
+                const clone = response.clone();
+                clone.text().then(text => {
+                    const loc = parseLocationsharingBody(text);
+                    if (loc && loc.latitude !== "Not found") {
+                        lastRpcLocation = loc;
+                        console.log("✅ RPC intercepted (full precision):", loc.latitude, loc.longitude, loc.address);
+                    }
+                }).catch(() => {});
+            }
+        } catch (e) {}
+        return response;
+    };
+
+    // Also intercept XHR (some Maps paths use it)
+    const origOpen = XMLHttpRequest.prototype.open;
+    const origSend = XMLHttpRequest.prototype.send;
+    XMLHttpRequest.prototype.open = function (method, url, ...rest) {
+        this._ltUrl = url;
+        return origOpen.call(this, method, url, ...rest);
+    };
+    XMLHttpRequest.prototype.send = function (...args) {
+        this.addEventListener("load", function () {
+            try {
+                if (this._ltUrl && String(this._ltUrl).indexOf("locationsharing/read") !== -1) {
+                    const loc = parseLocationsharingBody(this.responseText || "");
+                    if (loc && loc.latitude !== "Not found") {
+                        lastRpcLocation = loc;
+                        console.log("✅ RPC XHR intercepted:", loc.latitude, loc.longitude);
+                    }
+                }
+            } catch (e) {}
+        });
+        return origSend.apply(this, args);
+    };
+
+    async function waitForElement(selector, timeout = 10000) {
+        return new Promise((resolve, reject) => {
+            const startTime = Date.now();
+            const check = () => {
+                const element = document.querySelector(selector);
+                if (element) {
+                    console.log("✅ Found element with selector:", selector);
+                    resolve(element);
+                } else if (Date.now() - startTime > timeout) {
+                    console.warn("⏰ Timeout:", selector);
+                    reject(new Error("Timeout: " + selector));
+                } else {
+                    setTimeout(check, 500);
+                }
+            };
+            check();
+        });
+    }
+
+    async function getBatteryLevel() {
+        try {
+            let batteryElement = await waitForElement(
+                'div.LCF4w span[aria-label="Battery level"] + span.JpCtJf span span[jslog*="mutable:true"]',
+                10000
+            );
+            if (batteryElement) {
+                let batteryText = batteryElement.innerText.trim();
+                let batteryMatch = batteryText.match(/\d+%/);
+                if (batteryMatch) {
+                    console.log("✅ Battery level captured:", batteryMatch[0]);
+                    return batteryMatch[0];
+                }
+            }
+            return "Battery info not available";
+        } catch (error) {
+            console.warn("⚠️ Battery level error:", error.message);
+            return "Battery info not available";
+        }
+    }
+
+    async function scrapeLocalTime() {
+        try {
+            const timeElement = await waitForElement(
+                'div.LCF4w span.JpCtJf span[jslog*="mutable:true"]:not([aria-label])',
+                10000
+            );
+            if (timeElement) {
+                let timeText = timeElement.innerText.trim();
+                let cleanedTime = timeText.replace("Local time · ", "").replace("Hours, ", "").trim();
+                if (cleanedTime.match(/\d{1,2}:\d{2}\s?(?:AM|PM|am|pm)?/i) || cleanedTime.match(/Friday|Monday|Tuesday|Wednesday|Thursday|Saturday|Sunday/i)) {
+                    console.log("✅ Local time captured:", cleanedTime);
+                    return cleanedTime;
+                }
+            }
+            return "N/A";
+        } catch (error) {
+            console.warn("⚠️ Local time error:", error.message);
+            return "N/A";
+        }
+    }
+
+    async function getGoogleAccount() {
+        try {
+            const accountElement = await waitForElement(".DUwDvf.lfPIob", 10000);
+            return accountElement ? accountElement.innerText.trim() : "Google Account not found";
+        } catch (error) {
+            return "Google Account not found";
+        }
+    }
+
+    async function getLastUpdateFromPage() {
+        try {
+            const updateElement = await waitForElement("h2.bwoZTb.fontBodyMedium span", 10000);
+            return updateElement ? updateElement.innerText.trim() : "Last update not found";
+        } catch (error) {
+            return "Last update not found";
+        }
+    }
+
+    function getOldLocationData() {
+        let oldLocationData = {};
+        const url = window.location.href;
+        const regex = /@(-?\d+\.\d+),(-?\d+\.\d+)/;
+        const match = url.match(regex);
+        if (match) {
+            oldLocationData.old_latitude = match[1];
+            oldLocationData.old_longitude = match[2];
+        } else {
+            oldLocationData.old_latitude = "Not found";
+            oldLocationData.old_longitude = "Not found";
+        }
+        return oldLocationData;
+    }
+
+    async function fetchLocationData() {
+        // Prefer live intercepted RPC (full decimals, any shared user)
+        if (lastRpcLocation.latitude !== "Not found") {
+            return {
+                latitude: lastRpcLocation.latitude,
+                longitude: lastRpcLocation.longitude,
+                address: lastRpcLocation.address
+            };
+        }
+        console.warn("No intercepted RPC yet — open shared person panel and wait for Maps refresh");
+        return { latitude: "Not found", longitude: "Not found", address: "Not found" };
+    }
+
+    async function fetchData() {
+        await new Promise(resolve => setTimeout(resolve, 5000));
+
+        let oldLocationData = getOldLocationData();
+        let locationData = await fetchLocationData();
+
+        locationData.old_latitude = oldLocationData.old_latitude;
+        locationData.old_longitude = oldLocationData.old_longitude;
+
+        if (locationData.latitude === "Not found" && oldLocationData.old_latitude !== "Not found") {
+            locationData.latitude = oldLocationData.old_latitude;
+            locationData.longitude = oldLocationData.old_longitude;
+        }
+
+        locationData["lat,long"] = locationData.latitude + ", " + locationData.longitude;
+        locationData.localTime = await scrapeLocalTime();
+        locationData.batteryLevel = await getBatteryLevel();
+        locationData.googleAccount = await getGoogleAccount();
+        locationData.lastUpdate = await getLastUpdateFromPage();
+        locationData.serverTime = new Date().toLocaleString(undefined, { hour12: false });
+
+        console.log("📌 Captured Location Data:", locationData);
+        saveLocationData(locationData);
+    }
+
+    function saveLocationData(data) {
+        let storedData = JSON.parse(localStorage.getItem("sharedLocationData")) || [];
+        storedData.unshift(data);
+        storedData = storedData.slice(0, 100);
+        localStorage.setItem("sharedLocationData", JSON.stringify(storedData));
+        saveToJson(storedData);
+    }
+
+    function saveToJson(data) {
+        const timestamp = new Date().toISOString().replace(/[:.-]/g, "_");
+        const filename = "LatLong_" + timestamp + ".json";
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+
+    setTimeout(() => {
+        fetchData();
+        setInterval(fetchData, 120000);
+    }, 5000);
+})();
