@@ -1,3 +1,32 @@
+## 2026-10-28
+1. Install a virtual machine on ddserver15 with following features
+   1. Static IP
+   2. Ubuntu 26.04LTS
+   3. LXQt (only if not possible XFCE4) desktop env. No other desk should be present (No GNome, No KDE, No XFCE etc etc)
+   4. XRDP
+   5. SSH Access
+   6. Memory 6GB, CPU 4 Cores
+   7. Edge browser
+   8. Document how to do it
+2. Install the location server on the machine. Document how to do it.
+3. Put all passwords in the cliq-notebook
+4. Clean all unused podman containers, images and virtual machines on all the machines.
+
+## 2026-10-21
+1. Server ddserver15 - 192.168.10.105.
+    1. Add a RustDesk Podman Container. You can directly download a container. You do not have to install from scratch.
+      -- Use the keys in ddserver13: 192.168.10.103, /data/rustdesk 
+   
+
+## 2026-10-20
+1. Move Container/VM creation documents git markdown into a new branch called container_and_vm_scripts. 
+
+
+## Extra Set
+1. Find and document how to install edge browser on our ubuntu podman container with gui.
+2. Create a podman container with fully functioning edge browser
+3. Document how to do it
+
 ## 2026-10-10 Set 2.  
 Server ddserver15 - 192.168.10.105.  
 1. Add ddserver15 to your documentation
