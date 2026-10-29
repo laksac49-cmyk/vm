@@ -11,7 +11,7 @@
 |-----------------|--------------------------|-------------|----------|------------------------------------------------------|
 | 192.168.10.101  | ddserver11               | ddserver11  | 22       | Main – Podman Nginx, apps, DNS                       |
 | 192.168.10.104  | ddserver14               | ddserver14  | 22       | libvirt + reusable pods/VMs                          |
-| 192.168.10.105  | ddserver15               | ddserver15  | 22       | Host for location tracker VM                         |
+| 192.168.10.105  | ddserver15               | ddserver15  | 22       | Location tracker KVM host + **RustDesk OSS** (hbbs/hbbr) + ubuntu-lxqt-edge pod |
 | 192.168.122.1   | –                        | ddserver14  | –        | libvirt virbr0 gateway                               |
 | 192.168.13.104  | ddserver3v4-dating       | Sr.datadisca.com | 3422 | Jump host / dating                                |
 | 192.168.20.101  | Old Web Server           | –           | 2222     | Live until cutover                                   |
@@ -56,6 +56,23 @@ Use any unused address in `192.168.220.114` – `192.168.220.120` (or higher) af
 | location1.int.datadisca.com | ubuntu-lxqt-loc15 LAN / reverse proxy | Map UI + API                  |
 
 Update internal CoreDNS / public DNS when the published IP or proxy host changes.
+
+---
+
+## RustDesk on ddserver15 (2026-10-29)
+
+| Item | Value |
+|------|--------|
+| Host | ddserver15 (`192.168.10.105`) |
+| Containers | `rustdesk-hbbs`, `rustdesk-hbbr` (rootful Podman, `--net=host`) |
+| Image | `docker.io/rustdesk/rustdesk-server:latest` |
+| Data / keys | `/data/rustdesk` (`id_ed25519`, `id_ed25519.pub`) |
+| Ports | 21115/tcp, 21116/tcp+udp, 21117/tcp (optional 21118/21119 web) |
+| systemd | `container-rustdesk-hbbs.service`, `container-rustdesk-hbbr.service` (enabled) |
+| Client ID server | `192.168.10.105` |
+| Client Key | contents of `/data/rustdesk/id_ed25519.pub` (do not commit private key) |
+
+Also on same host: Podman `ubuntu-lxqt-edge` (`localhost/datadisca-ubuntu-lxqt-xrdp:26.04-edge`).
 
 ---
 
